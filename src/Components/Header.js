@@ -9,15 +9,14 @@ const Header = props => {
         <nav style={styles.nav}>
             <h1 style={styles.h1}>DomCo</h1>
             <ul style={styles.ul}>
-                <div><li stlye={styles.li}><a style={styles.a} href="url"><FaBell/></a></li></div>
-                <li stlye={styles.li}><a style={styles.a} href="url"><FaRegEye/></a></li>
-                <li stlye={styles.li}><a style={styles.a} href="url"><GiHamburgerMenu/></a></li>
+                <li style={styles.li}><a style={styles.a} href="url"><FaBell/></a></li>
+                <li style={styles.li}><a style={styles.a} href="url"><FaRegEye/></a></li>
+                <li style={styles.li}><a style={styles.a} href="url"><GiHamburgerMenu/></a></li>
             </ul>
         </nav>
 </div>
      );
 }
- 
 export default Header;
 const styles={
     nav:{
@@ -31,13 +30,15 @@ const styles={
     },
     ul:{
         display:'flex',
+        height:'100%',
         justifyContent: 'space-between',
         width:'15%',
         marginRight:'5%',
         alignItems:'center',
+        // border:'1px solid red',
       },
       a:{
-        padding:'1rem 0',
+        padding:'.4rem 0',
         fontSize:'1.3rem',
       },
       h1:{
@@ -45,7 +46,6 @@ const styles={
         marginLeft:'5%',
       },
       li:{
-      //  fontSize:'1.9rem',
-        padding:'10px',
+        // border:'1px solid blue',
       }
 }

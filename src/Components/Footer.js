@@ -12,12 +12,15 @@ const styles={
         position: 'absolute',
         bottom: '0',
         width: '100%', 
-        padding:'1rem',
+        padding:'1rem 0',
         backgroundColor:'#7FB069',
         boxShadow: '0px -4px 5px 0px rgba(125,125,125,1)',
         textAlign:'center',
     },
     icon:{
          fontSize:'1.6rem',
+    },
+    a:{
+        padding:'.4rem 0',
     }
 }
