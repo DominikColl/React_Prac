@@ -1,15 +1,18 @@
 import React from 'react';
-import { FaBell } from 'react-icons/fa';
+// import { FaBell } from 'react-icons/fa';
 import {GiHamburgerMenu} from 'react-icons/gi';
 import {FaRegEye} from 'react-icons/fa';
 import './Header.css';
+import {NavLink} from 'react-router-dom';
+import { WiCloud} from "react-icons/wi";
 const Header = props => {
     return ( 
      <div>
         <nav style={styles.nav}>
-            <h1 style={styles.h1}>DomCo</h1>
+            <h1 style={styles.h1}><NavLink to='/Home'>DomCo</NavLink></h1>
             <ul style={styles.ul}>
-                <li style={styles.li}><a style={styles.a} href="url"><FaBell/></a></li>
+            <li></li>
+                <li style={styles.li}><NavLink style={styles.a} to='/Weather'><WiCloud/></NavLink></li>
                 <li style={styles.li}><a style={styles.a} href="url"><FaRegEye/></a></li>
                 <li style={styles.li}><a style={styles.a} href="url"><GiHamburgerMenu/></a></li>
             </ul>
